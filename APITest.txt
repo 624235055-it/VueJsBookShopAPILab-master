@@ -1,0 +1,55 @@
+GET (All Books)
+
+http://localhost:3000/api/v1/books
+
+-------------------------------------------------
+
+GET (A Book by ID)
+
+http://localhost:3000/api/v1/book/79
+
+-------------------------------------------------
+
+DELETE
+
+http://localhost:3000/api/v1/book/61
+
+-------------------------------------------------
+
+POST (Add New Book)
+
+http://localhost:3000/api/v1/book
+
+{
+"title":"Data Mining",
+"price":2222,
+"isbn":"012345678",
+"pageCount":1977,
+"publishedDate":"1997-12-01T00:00:00.000-0800",
+"thumbnailUrl":"https://raw.githubusercontent.com/kesinee-bo/sp01/master/unavailable.jpg",
+"shortDescription":"Data mining is a process used by companies to turn raw data into useful information. By using software to look for patterns in large batches of data, businesses can learn more about their customers to develop more effective marketing strategies.",
+"author":"Kesinee Boonchuay",
+"category":"Data Science"
+}
+
+-------------------------------------------------
+
+PUT (Edit a Book)
+
+http://127.0.0.1:3000/api/v1/book/79
+
+{
+"bookid":79,	
+"title":"Data Mining 101",
+"price":999,
+"isbn":"2345678901",
+"pageCount":1977,
+"publishedDate":"1997-12-01T00:00:00.000-0800",
+"thumbnailUrl":"https://raw.githubusercontent.com/kesinee-bo/sp01/master/unavailable.jpg",
+"shortDescription":"Data mining is a process used by companies to turn raw data into useful information. By using software to look for patterns in large batches of data, businesses can learn more about their customers to develop more effective marketing strategies, increase sales and decrease costs.",
+"author":"Kesinee B.",
+"category":"Data Science"
+}
+
+-------------------------------------------------
+
